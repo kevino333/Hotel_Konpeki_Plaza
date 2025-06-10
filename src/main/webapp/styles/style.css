@@ -1,0 +1,199 @@
+@charset "UTF-8";
+:root {
+--colorPrincipal: #2b0a0a;
+--colorPrincipalClaro: #e36e6e;
+  --colorPrincipalOscuro: #5e2828;
+  --colorContraste: #f00;
+  --colorContrasteOscuro: #a60000;
+  --colorContrasteClaro: #ff8989;
+  --fondoClaro: #f4e4e4;
+  --fondoOscuro: #c1acac;
+  --texto: #212121;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Estilos cabecera */
+header {
+	background-color: var(--colorPrincipal);
+	height: 120px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	
+	align-items: center;
+}
+
+#cabecera_izq {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+#cabecera_cen {
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+}#cabecera_cen h1{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cabecera_der {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+h1 {
+	font-size: 72px;
+	color: var(--colorContraste);
+}
+
+#cabecera_der img {
+	margin-left: 10px;
+}
+
+/* estilos del menu*/
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+nav li {
+	width: 100%;
+	list-style: none;
+}
+
+nav img {
+	filter: brightness(0) saturate(100%) invert(31%) sepia(100%)
+		saturate(340%) hue-rotate(38deg) brightness(96%) contrast(93%);
+}
+
+nav a {
+	background-color: var(--colorPrincipalClaro);
+	
+	color: var(--colorPrincipalOscuro);
+	font-size: 22px;
+	font-weight: bolder;
+	
+	width: 100%;
+	height: 48px;
+	
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+nav a:visited {
+	background-color: var(--colorPrincipalClaro);
+	color: var(--colorPrincipalOscuro);
+}
+
+nav a:hover {
+	background-color: var(--colorPrincipalOscuro);
+	color: var(--colorPrincipalClaro);
+}
+
+nav a img {
+	padding-right: 10px;
+}
+
+nav a:hover img {
+	filter: brightness(0) saturate(100%) invert(66%) sepia(15%)
+		saturate(1101%) hue-rotate(33deg) brightness(102%) contrast(87%);
+}
+
+nav a:active {
+	background-color: var(--colorContrasteClaro);
+	color: var(--colorContrasteOscuro);
+}
+
+nav a:active img {
+	filter: brightness(0) saturate(100%) invert(53%) sepia(13%)
+		saturate(4505%) hue-rotate(20deg) brightness(92%) contrast(80%);
+}
+
+main {
+	background-color: var(--fondoOscuro);
+	padding: 10px;
+/* 	Añadir tamaño de nav para mantener footer abajo */
+	min-height: calc(100vh - 150px - 60px);
+
+}
+
+section {
+	background-color: var(--fondoClaro);
+	padding: 10px;
+	border-radius: 3px;
+}section h2{
+	text-align: center;
+	margin: 15px;
+	color: var(--colorPrincipalOscuro);
+}
+
+/*Estilos del footer*/
+footer {
+	
+	background-color: var(--colorPrincipal);
+	padding: 10px;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+	color:var(--colorContraste);
+}
+
+footer #footer_izq {
+	width:50%;
+	text-align: right;
+	padding-right: 20px;
+}
+
+footer #footer_der{
+	width:50%;
+	padding-left: 20px;
+} 
+
+ul{
+	list-style: none;
+}
+
+
+footer a{	
+	color:var(--colorContraste);
+}
+
+footer a:visited{	
+	color:var(--colorContraste);
+}
+
+footer a:hover{	
+	color:var(--colorContrasteClaro);
+}
+
+footer a:active{	
+	color:var(--colorContrasteOscuro);
+}
